@@ -22,17 +22,17 @@ app.get('/', (req, res) => {
 });
 
 app.get('/results', (req, res) => {
-    // Simulate API call to get results from a third-party service
-    const results = [
-      { id: 1, subject: 'Mathematics', grade: 'A' },
-      { id: 2, subject: 'Science', grade: 'B' },
-      { id: 3, subject: 'English', grade: 'C' },
-      { id: 4, subject: 'History', grade: 'A' },
-      { id: 5, subject: 'Geography', grade: 'B' },
-    ];
+  // Simulate API call to get results from a third-party service
+  const results = [
+    { subject: 'Mathematics', grade: 'A' },
+    { subject: 'Science', grade: 'B' },
+    { subject: 'English', grade: 'C' },
+    { subject: 'History', grade: 'A' },
+    { subject: 'Geography', grade: 'B' },
+  ];
 
-    res.json(results);
-  });
+  res.json(results);
+});
 
 // Start the server
 app.listen(PORT, () => {
